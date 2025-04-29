@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La course vers l'espace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Aller au contenu principal</a>
+
+<header role="banner">
+  <div class="logo">
+    <svg aria-hidden="true" width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C10 7 7 9 2 10c3 4 5 7 10 10 3-5 5-7 10-10-5-1-8-3-10-8z" fill="#fff"/>
+    </svg>
+  </div>
+  <h1>La course vers l'espace</h1>
+  <button id="toggle-theme" aria-label="Changer de mode">Mode sombre</button>
+</header>
+
+<nav role="navigation">
+  <ul>
+    <li><a href="#histoire">Histoire</a></li>
+    <li><a href="#acteurs">Acteurs majeurs</a></li>
+    <li><a href="#inscription">Inscription</a></li>
+  </ul>
+</nav>
+
+<main id="main" role="main">
+  <section id="histoire">
+    <h2>Une épopée humaine</h2>
+    <p>Depuis les années 1950, la conquête spatiale repousse les limites du possible. De Spoutnik, premier satellite soviétique, à l'alunissage d'Apollo 11 en 1969, jusqu'à la Station spatiale internationale aujourd'hui, l'humanité n'a cessé de rêver d'étoiles.</p>
+    <p>"L'avenir n'est pas ce qui va arriver, mais ce que nous allons faire." - Henri Bergson</p>
+    <figure>
+      <img src="fusee.jpg" alt="Fusée décollant vers l'espace, entourée d'un ciel bleu" />
+      <figcaption>Une fusée prenant son envol vers les étoiles.</figcaption>
+    </figure>
+  </section>
+
+  <section id="acteurs">
+    <h2>Les grands acteurs d'hier et d'aujourd'hui</h2>
+    <ul>
+      <li>NASA (USA)</li>
+      <li>ESA (Europe)</li>
+      <li>Roscosmos (Russie)</li>
+      <li>SpaceX (privé)</li>
+      <li>Blue Origin (privé)</li>
+      <li>Programme Artemis (retour sur la Lune)</li>
+    </ul>
+  </section>
+
+  <section id="inscription">
+    <h2>Inscription à notre newsletter</h2>
+    <p>Recevez toutes les dernières nouvelles de l'exploration spatiale directement dans votre boite mail !</p>
+    <form id="newsletter" aria-labelledby="inscription">
+      <label for="email">Adresse e-mail :</label>
+      <input type="email" id="email" name="email" required autocomplete="email" placeholder="exemple@mail.com">
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required minlength="9" pattern="(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{9,}" title="Le mot de passe doit contenir au moins 9 caractères, une majuscule, un caractère spécial et un chiffre." autocomplete="new-password">
+
+      <input type="submit" value="S'inscrire">
+    </form>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <p>&copy; 2025 Course vers l'espace - Tous droits réservés</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
