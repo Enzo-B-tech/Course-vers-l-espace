@@ -23,8 +23,14 @@ jobs:
       - name: Install axe-core-cli
         run: npm install -g @axe-core/cli
 
+      - name: Install http-server
+        run: npm install -g http-server
+
+      - name: Start local server in background
+        run: http-server . -p 8080 &
+
       - name: Run axe accessibility tests
-        run: axe ./ --exit
+        run: axe http://localhost:8080 --exit
 
   deploy:
     needs: test-accessibility
